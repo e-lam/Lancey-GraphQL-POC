@@ -6,6 +6,7 @@ config :rest, Rest.Server,
   adapter: Plug.Cowboy,
   plug: Rest.API,
   scheme: :http,
+  bind_addr: "0.0.0.0",
   port: 8880
 
 config :rest,
