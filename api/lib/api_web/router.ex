@@ -5,7 +5,11 @@ defmodule ApiWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api" do
+  scope "/", ApiWeb do
+    get "/", PageController, :index
+  end
+
+  scope "/api", ApiWeb do
     pipe_through(:api)
 
     forward "/", Absinthe.Plug,
