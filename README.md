@@ -30,6 +30,53 @@ After cloning this repo, your need to :
 - Install dependencies : `mix deps.get`
 - Setup database and run seeds : `mix ecto.setup`
 
-## Go to the moon
+## Go to the moon 🚀
 
 At the root : `$ overmind start`
+
+### Query Examples
+
+#### Query all authors (Via Rest API)
+
+```graphql
+query {
+  authors {
+    id
+    name
+    age
+  }
+}
+```
+
+#### Query all posts (On database)
+
+```graphql
+query {
+  posts {
+    id
+    title
+    description
+  }
+}
+```
+
+#### ✨✨ Start magic (MIX BOTH) ✨✨
+
+```graphql
+query {
+  posts {
+    id
+    title
+    description
+    author {
+      name
+      age
+    }
+  }
+}
+```
+
+## Read more on GraphQL
+
+- [Fragments](https://graphql.org/learn/queries/#fragments)
+- [Subscription](https://www.apollographql.com/docs/react/advanced/subscriptions) or [here](https://medium.com/@hpux/make-web-real-time-with-graphql-subscriptions-5a59ac1b010c)
