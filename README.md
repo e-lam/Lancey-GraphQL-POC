@@ -63,6 +63,17 @@ query {
 }
 ```
 
+#### Create a post
+
+```graphql
+mutation CreatePost {
+  createPost(title: "Second", description: "We're off to a great start!") {
+    id
+    title
+  }
+}
+```
+
 #### ✨✨ Start magic (MIX BOTH) ✨✨
 
 ```graphql
