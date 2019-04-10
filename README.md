@@ -32,7 +32,10 @@ After cloning this repo, your need to :
 
 ## Go to the moon 🚀
 
-At the root : `$ overmind start`
+- At the root folder : `$ overmind start`
+- Open your browser on GraphiQL : `http://0.0.0.0:4000/graphiql`
+
+(See REST-API `http://0.0.0.0:8880/users/`)
 
 ### Query Examples
 
