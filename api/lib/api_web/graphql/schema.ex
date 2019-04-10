@@ -11,15 +11,10 @@ defmodule ApiWeb.Schema do
       resolve(&Resolvers.Content.list_posts/3)
     end
 
-    @desc "Get all author"
-    field :author, list_of(:author) do
+    @desc "Get all authors"
+    field :authors, list_of(:author) do
       resolve(&Resolvers.Rest.list_authors/3)
     end
-
-    # @desc "Get specific author"
-    # field :posts, list_of(:post) do
-    #   resolve(&Resolvers.Content.list_posts/3)
-    # end
   end
 
   mutation do
