@@ -4,7 +4,7 @@
 
 Implementing this architecture :
 
-![](http://share.e-lam.net/afafe0c7b6b3/archi.png)
+![](http://share.e-lam.net/c7f861eae3e8/archi.png)
 
 ## Install
 
@@ -28,8 +28,7 @@ After cloning this repo, your need to :
 
 - Go to Rest API : `cd api`
 - Install dependencies : `mix deps.get`
-- Setup database : `mix ecto.setup`
-- Run seeds (populate sample data) : `$ mix run priv/repo/seeds.exs`
+- Setup database and run seeds : `mix ecto.setup`
 
 ## Go to the moon
 
