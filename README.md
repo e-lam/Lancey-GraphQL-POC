@@ -4,7 +4,7 @@
 
 Implementing this architecture :
 
-![](http://share.e-lam.net/afafe0c7b6b3/archi.png)
+![](http://share.e-lam.net/c7f861eae3e8/archi.png)
 
 ## Install
 
